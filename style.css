@@ -1,3 +1,15 @@
+/* Reset & basic styles */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  font-family: 'Special Elite', monospace;
+  background-color: #fdfdf9; /* soft book page white */
+  color: #111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
 /* BLOG PREVIEW STYLES */
 .blog-post {
   border-bottom: 1px solid #ddd;
