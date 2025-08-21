@@ -1,0 +1,71 @@
+/* Import the Special Elite font */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* General styles */
+body {
+  font-family: 'Special Elite', monospace;
+  background-color: #fdfdf9; /* book page white */
+  color: #111;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+  background: #fdfdf9;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  position: relative;
+}
+
+/* Hover underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #222;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Header image (book cover) */
+header {
+  background: url('your-cover-image.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
