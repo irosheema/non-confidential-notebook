@@ -66,3 +66,40 @@ body {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+/* NAVIGATION BAR */
+nav {
+  background: #111;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fdfdf9;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00; /* subtle highlight */
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background: #ffcc00;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
